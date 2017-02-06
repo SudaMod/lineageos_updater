@@ -1,4 +1,5 @@
 [
   {  "model": "bacon", "oem": "OnePlus", "name": "One"},
-  {  "model": "gemini", "oem": "Xiaomi", "name": "Mi 5"}
+  {  "model": "gemini", "oem": "Xiaomi", "name": "Mi 5"},
+  {  "model": "libra", "oem": "Xiaomi", "name": "Mi 4c"}
 ]
