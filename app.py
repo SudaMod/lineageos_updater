@@ -6,6 +6,7 @@ from flask_caching import Cache
 from functools import wraps
 from pydoc import locate
 from uuid import uuid4
+from flask_cors import CORS, cross_origin
 
 import click
 import datetime
@@ -16,6 +17,7 @@ import sys
 import time
 
 app = Flask(__name__)
+CORS(app)
 app.config.from_pyfile('app.cfg')
 
 db = MongoEngine(app)
