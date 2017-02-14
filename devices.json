@@ -404,6 +404,7 @@
   {  "model": "vs985", "oem": "LG", "name": "G3 (VZW)", "image": "d850"},
   {  "model": "w5", "oem": "LG", "name": "Optimus L70"},
   {  "model": "w7", "oem": "LG", "name": "Optimus L90"},
+  {  "model": "A6020", "oem": "Lenovo", "name": "Lenovo Vibe K5/K5 Plus"},
   {  "model": "wt88047", "oem": "Wingtech", "name": "Redmi 2"},
   {  "model": "wingray", "oem": "Motorola", "name": "Xoom (Wi-Fi)"},
   {  "model": "xt1053", "oem": "Motorola", "name": "Moto X 2013 (TMO)", "image": "ghost"},
