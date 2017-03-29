@@ -254,7 +254,7 @@
   {  "model": "nicki", "oem": "Sony", "name": "Xperia M"},
   {  "model": "nozomi", "oem": "Sony", "name": "Xperia S"},
   {  "model": "nx510j", "oem": "ZTE", "name": "Nubia Z9 Max"},
-  {  "model": "nx512j", "oem": "ZTE", "name": "Nubia Z9 Max (nx512j)"},
+  {  "model": "nx512j", "oem": "ZTE", "name": "Nubia Z9 Max"},
   {  "model": "nx505j", "oem": "ZTE", "name": "Nubia Z7 Max"},
   {  "model": "nx507j", "oem": "ZTE", "name": "Nubia Z7 Mini"},
   {  "model": "obake", "oem": "Motorola", "name": "Droid Ultra/MAXX"},
