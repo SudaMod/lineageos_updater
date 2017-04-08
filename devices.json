@@ -18,6 +18,7 @@
   {  "model": "armani", "oem": "Xiaomi", "name": "Redmi 1S"},
   {  "model": "dior", "oem": "Xiaomi", "name": "Redmi Note 4G"},
   {  "model": "mido", "oem": "Xiaomi", "name": "Redmi note 4x"},
+  {  "model": "natrium", "oem": "Xiaomi", "name": "Mi 5s Plus"},
   {  "model": "athene", "oem": "Motorola", "name": "Moto G4/G4 Plus"},
   {  "model": "axon7", "oem": "ZTE", "name": "Axon 7"},
   {  "model": "bacon", "oem": "OnePlus", "name": "One"},
