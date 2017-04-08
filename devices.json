@@ -317,6 +317,7 @@
   {  "model": "quincytmo", "oem": "Samsung", "name": "Galaxy Note (TMO)", "image": "t879"},
   {  "model": "r5", "oem": "Oppo", "name": "R5/R5s (Intl)"},
   {  "model": "r7plus", "oem": "Oppo", "name": "R7 Plus"},
+  {  "model": "r7sf", "oem": "Oppo", "name": "OPPO R7s"},
   {  "model": "r950", "oem": "Samsung", "name": "Galaxy Note II (USC)", "image": "n7100"},
   {  "model": "rendang", "oem": "Smartfren", "name": "Andromax Q"},
   {  "model": "robyn", "oem": "Sony Ericsson", "name": "Xperia X10 Mini", "has_recovery": false},
