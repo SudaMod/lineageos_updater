@@ -16,6 +16,7 @@
   {  "model": "apollo", "oem": "Amazon", "name": "Kindle Fire HDX 8.9 (3rd gen)"},
   {  "model": "aries", "oem": "Xiaomi", "name": "Mi 2"},
   {  "model": "armani", "oem": "Xiaomi", "name": "Redmi 1S"},
+  {  "model": "lithium", "oem": "Xiaomi", "name": "Mi Mix"},
   {  "model": "dior", "oem": "Xiaomi", "name": "Redmi Note 4G"},
   {  "model": "mido", "oem": "Xiaomi", "name": "Redmi note 4x"},
   {  "model": "natrium", "oem": "Xiaomi", "name": "Mi 5s Plus"},
