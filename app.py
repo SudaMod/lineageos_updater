@@ -95,15 +95,12 @@ def import_devices():
 
 @app.cli.command()
 def check_builds():
-    for d in Device.objects():
-        if requests.head(d.url).status_code == 404:
-            print "Rom.objects(filename={}).delete()".format(d.filename)
+    for r in Rom.objects():
+        if requests.head(r.url).status_code == 404:
+            print("Rom.objects(filename=\"{}\").delete()".format(r.filename))
 
-@app.route('/api/v1/<string:device>/<string:romtype>/<string:incrementalversion>')
-def index(device, romtype, incrementalversion):
-    after = request.args.get("after")
-    version = request.args.get("version")
-
+@cache.memoize(timeout=3600)
+def get_build_types(device, romtype, after, version):
     roms = Rom.get_roms(device=device, romtype=romtype, before=app.config['BUILD_SYNC_TIME'])
     if after:
         roms = roms(datetime__gt=after)
@@ -124,7 +121,16 @@ def index(device, romtype, incrementalversion):
         })
     return jsonify({'response': data})
 
+@app.route('/api/v1/<string:device>/<string:romtype>/<string:incrementalversion>')
+#cached via memoize on get_build_types
+def index(device, romtype, incrementalversion):
+    after = request.args.get("after")
+    version = request.args.get("version")
+
+    return get_build_types(device, romtype, after, version)
+
 @app.route('/api/v1/types/<string:device>/')
+@cache.cached(timeout=3600)
 def get_types(device):
     types = set(["nightly"])
     for rtype in Rom.get_types(device):
@@ -133,7 +139,7 @@ def get_types(device):
 
 @app.route('/api/v1/requestfile/<string:file_id>')
 def requestfile(file_id):
-    rom = Rom.objects.get(id=id)
+    rom = Rom.objects.get(id=file_id)
     if not rom['url']:
         url = config['baseurl']
         if url[-1:] != '/':
