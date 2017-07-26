@@ -21,7 +21,6 @@
   {  "model": "scorpio", "oem": "Xiaomi", "name": "Mi Note 2"},
   {  "model": "sagit", "oem": "Xiaomi", "name": "Mi 6"},
   {  "model": "cheeseburger", "oem": "OnePlus", "name": "5"},
-  {  "model": "OnePlus5", "oem": "OnePlus", "name": "A5000"},
   {  "model": "a700", "oem": "Acer", "name": "Iconia Tab A700"},
   {  "model": "acclaim", "oem": "Barnes & Noble", "name": "Nook Tablet"},
   {  "model": "ace", "oem": "HTC", "name": "Desire HD / Inspire 4G"},
